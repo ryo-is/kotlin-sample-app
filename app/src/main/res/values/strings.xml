@@ -2,4 +2,5 @@
     <string name="app_name">KotlinSampleApp</string>
     <string name="test">Test</string>
     <string name="textviewarea">TextViewArea</string>
+    <string name="textview_value">HelloWorld!!!</string>
 </resources>

@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button.setOnClickListener {
-            textView.setText("HelloWorld!!!")
+            textView.setText(getString(R.string.textview_value))
         }
     }
 }
