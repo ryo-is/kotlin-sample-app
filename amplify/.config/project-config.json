@@ -1,0 +1,16 @@
+{
+    "projectName": "KotlinSampleApp",
+    "projectPath": "/Users/ryosukeizumi/AndroidStudioProjects/KotlinSampleApp",
+    "defaultEditor": "none",
+    "frontendHandler": {
+        "android": "/Users/ryosukeizumi/.anyenv/envs/nodenv/versions/10.15.1/lib/node_modules/@aws-amplify/cli/node_modules/amplify-frontend-android"
+    },
+    "amplify-frontend-android": {
+        "config": {
+            "ResDir": "app/src/main/res"
+        }
+    },
+    "providers": {
+        "awscloudformation": "/Users/ryosukeizumi/.anyenv/envs/nodenv/versions/10.15.1/lib/node_modules/@aws-amplify/cli/node_modules/amplify-provider-awscloudformation"
+    }
+}

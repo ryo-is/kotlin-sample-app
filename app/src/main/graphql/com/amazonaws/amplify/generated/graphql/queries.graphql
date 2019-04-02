@@ -1,0 +1,22 @@
+# this is an auto generated file. This will be overwritten
+query GetAndroidDemoApi($id: ID!, $create_time: String!) {
+  getAndroidDemoAPI(id: $id, create_time: $create_time) {
+    id
+    create_time
+    description
+  }
+}
+query ListAndroidDemoApis(
+  $filter: TableAndroidDemoAPIFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAndroidDemoAPIS(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      create_time
+      description
+    }
+    nextToken
+  }
+}

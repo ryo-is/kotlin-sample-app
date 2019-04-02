@@ -1,0 +1,22 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateAndroidDemoApi($input: CreateAndroidDemoAPIInput!) {
+  createAndroidDemoAPI(input: $input) {
+    id
+    create_time
+    description
+  }
+}
+mutation UpdateAndroidDemoApi($input: UpdateAndroidDemoAPIInput!) {
+  updateAndroidDemoAPI(input: $input) {
+    id
+    create_time
+    description
+  }
+}
+mutation DeleteAndroidDemoApi($input: DeleteAndroidDemoAPIInput!) {
+  deleteAndroidDemoAPI(input: $input) {
+    id
+    create_time
+    description
+  }
+}

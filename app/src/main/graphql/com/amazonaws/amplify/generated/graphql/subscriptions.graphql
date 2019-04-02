@@ -1,0 +1,46 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateAndroidDemoApi(
+  $id: ID
+  $create_time: String
+  $description: String
+) {
+  onCreateAndroidDemoAPI(
+    id: $id
+    create_time: $create_time
+    description: $description
+  ) {
+    id
+    create_time
+    description
+  }
+}
+subscription OnUpdateAndroidDemoApi(
+  $id: ID
+  $create_time: String
+  $description: String
+) {
+  onUpdateAndroidDemoAPI(
+    id: $id
+    create_time: $create_time
+    description: $description
+  ) {
+    id
+    create_time
+    description
+  }
+}
+subscription OnDeleteAndroidDemoApi(
+  $id: ID
+  $create_time: String
+  $description: String
+) {
+  onDeleteAndroidDemoAPI(
+    id: $id
+    create_time: $create_time
+    description: $description
+  ) {
+    id
+    create_time
+    description
+  }
+}

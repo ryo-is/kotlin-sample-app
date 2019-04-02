@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "otlinamplepp-20190402094236-authRole",
+            "UnauthRoleArn": "arn:aws:iam::795622185554:role/otlinamplepp-20190402094236-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::795622185554:role/otlinamplepp-20190402094236-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "otlinamplepp-20190402094236-deployment",
+            "UnauthRoleName": "otlinamplepp-20190402094236-unauthRole",
+            "StackName": "otlinamplepp-20190402094236",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:795622185554:stack/otlinamplepp-20190402094236/36262db0-54e0-11e9-baab-0e41556fdef4"
+        }
+    }
+}
