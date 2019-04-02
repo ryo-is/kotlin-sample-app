@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="mainBgColor">#2c3e50</color>
     <color name="commonTextColor">#fafafa</color>
+    <color name="greenColor">#41b883</color>
 </resources>

@@ -9,7 +9,7 @@
     </style>
 
     <style name="editTextTheme">
-        <item name="colorControlNormal">@color/commonTextColor</item>
-        <item name="colorControlActivated">@color/commonTextColor</item>
+        <item name="colorControlNormal">@color/greenColor</item>
+        <item name="colorControlActivated">@color/greenColor</item>
     </style>
 </resources>

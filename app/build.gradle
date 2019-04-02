@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.amazonaws.appsync'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -30,4 +32,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //Base SDK
+    implementation 'com.amazonaws:aws-android-sdk-core:2.8.2'
+
+    //AppSync SDK
+    implementation 'com.amazonaws:aws-android-sdk-appsync:2.6.28'
+
+    implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0'
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
 }
