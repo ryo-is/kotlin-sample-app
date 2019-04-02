@@ -8,7 +8,7 @@
         tools:context=".MainActivity" android:background="@color/mainBgColor">
 
     <Button
-            android:text="@string/test"
+            android:text="@string/buttonText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"

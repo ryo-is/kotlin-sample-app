@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
             .context(applicationContext)
             .awsConfiguration(AWSConfiguration(applicationContext))
             .build()
-        print(awsAppSyncClient)
 
         // MutationのCallBack
         val mutationCallBack = object : GraphQLCall.Callback<CreateAndroidDemoApiMutation.Data>() {
