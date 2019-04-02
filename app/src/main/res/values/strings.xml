@@ -2,6 +2,7 @@
     <string name="app_name">KotlinSampleApp</string>
     <string name="buttonText">Submit</string>
     <string name="textviewarea">TextViewArea</string>
+    <string name="gqlQueryDataText">No Data</string>
     <string name="textview_value">HelloWorld!!!</string>
     <string name="edit_text">EditText</string>
     <string name="textViewTestSize">18sp</string>
