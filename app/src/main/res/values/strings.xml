@@ -6,4 +6,5 @@
     <string name="textview_value">HelloWorld!!!</string>
     <string name="edit_text">EditText</string>
     <string name="textViewTestSize">18sp</string>
+    <string name="linkButton">linkButton</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.ryosukeizumi.kotlinsampleapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.amazonaws.amplify.generated.graphql.CreateAndroidDemoApiMutation
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         // 現在時刻取得
         fun getNowTime(): String {
             val date = Date()
-            val format = SimpleDateFormat("YYYY/MM/DD HH:mm:ss", Locale.getDefault())
+            val format = SimpleDateFormat("YYYY/MM/dd HH:mm:ss", Locale.getDefault())
             return format.format(date)
         }
 
@@ -85,6 +86,11 @@ class MainActivity : AppCompatActivity() {
             val editTextInput: String = editText.text.toString()
             textView.text = editTextInput
             runMutation(editTextInput)
+        }
+
+        linkButton.setOnClickListener {
+            val intent = Intent(this, WebViewActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -31,7 +31,7 @@
     <TextView
             android:text="@string/gqlQueryDataText"
             android:layout_width="304dp"
-            android:layout_height="279dp"
+            android:layout_height="84dp"
             android:id="@+id/queryData"
             app:layout_constraintEnd_toEndOf="parent"
             android:gravity="center"
@@ -54,5 +54,13 @@
             app:theme="@style/editTextTheme"
             android:textColor="@color/commonTextColor"
             android:textSize="18sp"/>
+    <Button
+            android:text="@string/linkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linkButton" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/queryData" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
 
 </android.support.constraint.ConstraintLayout>
