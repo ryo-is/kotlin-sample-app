@@ -23,6 +23,8 @@ class WebViewActivity : AppCompatActivity() {
             webChromeClient = WebChromeClient()
             webViewClient = WebViewClient()
         }
-        webView.loadUrl("https://iot.kyoto/")
+
+        webView.loadUrl("http://vue-webview-app.s3-website-ap-northeast-1.amazonaws.com/")
+//        webView.loadUrl("file:///android_asset/index.html")
     }
 }
