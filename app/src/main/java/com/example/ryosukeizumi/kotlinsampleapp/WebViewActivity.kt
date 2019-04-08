@@ -16,6 +16,7 @@ class WebViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
 
+        // WebViewの設定等
         webView.apply {
             settings.apply {
                 javaScriptEnabled = true
@@ -45,8 +46,7 @@ class WebViewActivity : AppCompatActivity() {
             }
         }
 
+        // 指定したURLのページをLoad
         webView.loadUrl(url)
-//        webView.loadUrl("file:///android_asset/index.html")
-
     }
 }
