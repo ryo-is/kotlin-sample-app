@@ -9,12 +9,20 @@ import android.webkit.WebViewClient
 import kotlinx.android.synthetic.main.activity_web_view.*
 import timber.log.Timber
 
+import com.amazonaws.http.HttpMethodName
+import com.amazonaws.mobileconnectors.apigateway.ApiClientFactory
+import com.amazonaws.mobileconnectors.apigateway.ApiClientException
+import com.amazonaws.mobileconnectors.apigateway.ApiResponse
+import com.amazonaws.mobileconnectors.apigateway.ApiRequest
+import jp.co.mock.CdkADeployedPIClient
+
 class WebViewActivity : AppCompatActivity() {
     private val url = "http://vue-webview-app.s3-website-ap-northeast-1.amazonaws.com/"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_view)
+
 
         // WebViewの設定等
         webView.apply {
@@ -32,7 +40,21 @@ class WebViewActivity : AppCompatActivity() {
         // WebViewからNative側にデータを渡す
         webView.webChromeClient = object : WebChromeClient() {
             override fun onJsAlert(view: WebView?, url: String?, message: String?, result: JsResult?): Boolean {
-                Timber.d(message)
+                try {
+
+                    val client: CdkADeployedPIClient = ApiClientFactory()
+                        .credentialsProvider(null)
+                        .build(CdkADeployedPIClient::class.java)
+
+                    val request = ApiRequest(client.javaClass.simpleName)
+                        .withHttpMethod(HttpMethodName.GET)
+                        .withPath("get")
+                    val response = client.execute(request)
+                    Timber.d(response.toString())
+                } catch (e: ApiClientException) {
+                    Timber.e(e.toString())
+                }
+
                 result?.cancel()
                 return true
             }
